@@ -23,7 +23,7 @@ public class AssembleBoardEntry {
 	public AssembleBoardEntry(AssembleBoard board, String text, int position) {
 		this.board = board;
 		this.text = text;
-		this.identifier = this.board.getUniqueIdentifier(position);
+		this.identifier = this.board.getUniqueIdentifier(String.valueOf(position));
 
 		this.setup();
 	}
